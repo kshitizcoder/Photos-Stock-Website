@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #1e1e1e;
+}
+
+.react-multiple-carousel__arrow--right {
+  background: transparent;
+}
+
+.react-multiple-carousel__arrow--right::before {
+  background: #6246ea !important;
+  border-radius: 50%;
+  padding: .5rem 1.3rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+
+
+}
+
+.react-multiple-carousel__arrow--left::before {
+  background: #2cb67d !important;
+  border-radius: 50%;
+  padding: .5rem 1.3rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+
+}
+
+.react-multiple-carousel__arrow:hover {
+  background: transparent;
+  /* color: white; */
+}
+
+.react-multiple-carousel__arrow--left::before, .react-multiple-carousel__arrow--right::before {
+  margin-bottom: 7rem;
+}
+
+.photodetails img {
+  width: 500px;
+  height: 500px;
+  object-fit: fill;
+}
